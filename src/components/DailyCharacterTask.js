@@ -3,11 +3,11 @@ const DailyCharacterTask = () => {
   return (
     <>
       <div>
-        <img src="../img/yoinked_images/chaosdungeon_icon.png" alt="chaos dungeon icon"></img>
-        <label for="chaosdungeon">
-          Chaos Dungeon
+        <label>
+            <img src="../img/yoinked_images/chaosdungeon_icon.png" alt="chaos dungeon icon"/>
+            Chaos Dungeon
+            <input type="checkbox"/>
         </label>
-        <input type="checkbox" id="chaosdungeon" name="chaosdungeon"></input>
       </div>
     </>
   );
