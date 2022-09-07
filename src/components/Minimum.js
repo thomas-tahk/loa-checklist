@@ -1,12 +1,8 @@
-import React,{useState, useEffect} from 'react';
+import React,{useState} from 'react';
 
 const Minimum = () => {
   const [showStatus, setShowStatus] = useState(true);
-  const [buttonText, setButtonText] = useState('hide');
-
-  useEffect(() => {
-    showStatus ? setButtonText('hide'):setButtonText('show');
-  }, [showStatus]);
+  const buttonText = showStatus ? 'hide':'show'
 
   return (
     <>
@@ -22,7 +18,10 @@ const Minimum = () => {
           :null
         }
 
-        <button onClick={()=>setShowStatus(!showStatus)}>
+        <button onClick={()=> {
+          setShowStatus(!showStatus);
+        }
+        }>
           {buttonText}
         </button>
       </div>
