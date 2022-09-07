@@ -1,13 +1,13 @@
 import React from 'react';
 
-const TaskComponent = (props) => {
+const TaskComponent = ({task}) => {
 
   return (
     <div>
       <label>
-        <img src = {props.task.icon} alt = {props.task.name}/>
-        {props.task.name}
-        {[...Array(props.task.numTimes)].map((e, i) => <input key={i} type="checkbox"/>)}
+        <img src = {task.icon} alt = {task.name}/>
+        {task.name}
+        {[...Array(task.numTimes)].map((e, i) => <input key={i} type="checkbox"/>)}
       </label>
     </div>
   );
