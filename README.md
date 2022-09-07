@@ -5,4 +5,4 @@ This project is meant to be a comprehensive, customizable checklist for Lost Ark
 ## Project Status
 
 Barely started, WIP.
-Currently working on learning some basics and imagine exact layout of different features/displays
+Currently working on defining and implementing minimum viable product.
