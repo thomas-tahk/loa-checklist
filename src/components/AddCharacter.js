@@ -2,6 +2,7 @@ const AddCharacter = () => {
 
   function addCharacter() {
     alert('New character added!');
+    // update with modal code later
   }
 
   return (
